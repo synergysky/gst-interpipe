@@ -217,7 +217,7 @@ gst_inter_pipe_sink_init (GstInterPipeSink * sink)
   /* AppSink callbacks */
   callbacks.eos = GST_DEBUG_FUNCPTR (gst_inter_pipe_sink_eos);
   callbacks.new_sample = GST_DEBUG_FUNCPTR (gst_inter_pipe_sink_new_buffer);
-  callbacks.new_preroll = GST_DEBUG_FUNCPTR (gst_inter_pipe_sink_new_preroll);
+  //callbacks.new_preroll = GST_DEBUG_FUNCPTR (gst_inter_pipe_sink_new_preroll);
   gst_app_sink_set_callbacks (GST_APP_SINK (sink), &callbacks, NULL, NULL);
 
   /*AppSink configuration */
