@@ -322,6 +322,7 @@ no_unique:
   {
     GST_WARNING ("Could not add node %s, it is not unique.", node_name);
     g_mutex_unlock (&nodes_mutex);
+    g_assert_not_reached();
     return FALSE;
   }
 add_error:
